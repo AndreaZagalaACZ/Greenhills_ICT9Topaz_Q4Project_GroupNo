@@ -1,1 +1,44 @@
-
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Q4 Project</title>
+    <style>
+        body {
+            background-image:url(https://t3.ftcdn.net/jpg/03/55/60/70/360_F_355607062_zYMS8jaz4SfoykpWz5oViRVKL32IabTP.jpg);
+            background-size: cover;
+            background-size: 150%, 100%;
+            background-position: center;
+            background-repeat: no-repeat;
+            font-family: Noto Sans, sans-serif;
+        }
+        div {
+            text-align: center; 
+        }
+        input {
+            padding: 10px 100px; 
+            border: 2px solid rgb(175, 162, 199); 
+            border-radius: 5px; 
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <br><div style="background-color: white; padding: 50px; border-radius: 10px; max-width: 400px; margin: auto; color: #100939; box-shadow: 0px 6px 8px 0px #494848;">
+        <h1>Login Authentication</h1>
+        <form>
+            <p>Username</p>
+            <input type="text" id="input" placeholder="Enter your username"><br>
+            <p>Password</p>
+            <input type="password" id="input2" placeholder="Enter your password"><br><br>
+            <label>
+                <input type="checkbox" value="Stay logged in">Stay logged in
+            </label><br><br>
+            <input type="button" id="loginBtn" onclick="loginAuthentication()" value="Log In" style="padding: 10px 160px; color: white; background-color:#4d8ff4;">
+        </form><br>
+        <p><a href="https://account.live.com/username/recover">Forgot Username or Password?</a></p>
+        <script src="proj.js"></script>
+    </div>
+</body>
+</html>
