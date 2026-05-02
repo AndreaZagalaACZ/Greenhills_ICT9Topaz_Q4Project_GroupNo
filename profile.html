@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Q4 Skills Test</title>
+    <style>
+        body {
+            background-image:url(https://t3.ftcdn.net/jpg/03/55/60/70/360_F_355607062_zYMS8jaz4SfoykpWz5oViRVKL32IabTP.jpg);
+            background-size: cover;
+            background-size: 150%, 100%;
+            background-position: center;
+            background-repeat: no-repeat;
+            font-family: Noto Sans, sans-serif;
+        }
+        div {
+            text-align: center; 
+        }
+        input {
+            padding: 10px 100px; 
+            border: 2px solid rgb(175, 162, 199); 
+            border-radius: 5px; 
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <div class="main-wrapper">
+        <div style="text-align: center; background-image: linear-gradient(45deg, rgba(230, 154, 207, 1) 0%, rgba(190, 140, 240, 1) 100%); padding: 20px; border-radius: 50px; max-width: 300px;">
+            <img id="preview" src="png.png" alt="Profile preview">
+            <form>
+                <br><input id="fileInput" type="file" accept="image/*"style="width:100%; background-color: rgb(208, 46, 237); color:white; padding:10px; border:none; border-radius:5px;">
+            </form>
+        </div>
+        <br><div style="text-align: left; background-color: white; padding: 20px; border-radius: 50px; max-width: 400px; color: #100939; box-shadow: 0px 6px 8px 0px #494848;">
+            <h1><b>Student Information</b></h1>
+            <p style="color: rgb(255,255,255);">Personal Information of the given Student. Please contact an administrator via regristration office for any changes.</p>
+            <p>Username:</p>
+            <p><!--Username--></p>
+            <p>Password:</p>
+            <p><!--Password--></p>
+            <p>Student ID:</p>
+            <p><!--Student ID--></p>
+            <p>Grade and Section:</p> 
+            <p><!--Grade and Section--></p>
+            <p>Contact Number:</p>
+            <p><!--Contact Number--></p>
+            <p>Email Address</p>
+            <p><!--Email Address--></p>
+            <form style="text-align:center;">
+                <br><button type="submit" style="background-color: rgb(208, 46, 237); color: rgb(0, 0, 0); padding: 10px 80px; border: none; border-radius: 5px; text-align: center;" style="color: white; text-decoration: none;">Change Password</a></button>
+            </form> <!-- add like add a password window.alert() thing i thing u have it in ur notes thingys but idk the login part vro-->
+        </div>
+    </div><br>
+    <script>
+        const fileInput = document.getElementById('fileInput');
+        const previewImg = document.getElementById('preview');
+        if (fileInput && previewImg) {
+            fileInput.addEventListener('change', function(event) {
+                const file = event.target.files[0];
+                if (file && file.type.startsWith('image/')) {
+                    const reader = new FileReader();
+                    reader.onload = function(e) {
+                        previewImg.src = e.target.result;
+                    };
+                    reader.readAsDataURL(file);
+                }
+            });
+        }
+    </script>
+</body>
+</html>
+<!-- 1. finish putting student information
+2. add like "change password" thing ... its in one of the notes i think?
+3. change the style to white + purple
+4. -->
