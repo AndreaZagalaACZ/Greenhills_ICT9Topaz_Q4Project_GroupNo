@@ -1,1 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Q4 Drill 1</title>
+    <style>
+        body {
+            background-image:url(https://t3.ftcdn.net/jpg/03/55/60/70/360_F_355607062_zYMS8jaz4SfoykpWz5oViRVKL32IabTP.jpg);
+            background-size: cover;
+            background-size: 150%, 100%;
+            background-position: center;
+            background-repeat: no-repeat;
+            font-family: Noto Sans, sans-serif;
+        }
+        div {
+            text-align: center; 
+        }
+        input {
+            padding: 10px 25px; 
+            border: 2px solid rgb(175, 162, 199); 
+            border-radius: 5px; 
+            text-align: center;
+        }
+        ul.sidebar {
+            list-style: none;
+            margin: 0;
+            padding: 24px 0;
+            width: 180px;
+            background: linear-gradient(180deg, #a119bf 0%, #7a0d9a 100%);
+            position: fixed;
+            top: 0;
+            left: 0;
+            height: 100%;
+            overflow: auto;
+            box-shadow: 4px 0 18px rgba(0, 0, 0, 0.25);
+        }
 
+        ul.sidebar h2 {
+            color: #fff;
+            font-size: 16px;
+            margin: 0 0 18px;
+            padding: 0 20px;
+            text-transform: uppercase;
+            letter-spacing: 0.08em;
+        }
+
+        ul.sidebar li {
+            margin: 0;
+        }
+
+        ul.sidebar li a {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            color: #f7edf7;
+            padding: 14px 20px;
+            text-decoration: none;
+            border-radius: 12px;
+            transition: background 0.25s ease, color 0.25s ease;
+        }
+
+        ul.sidebar li a.active,
+        ul.sidebar li a:hover {
+            background: rgba(255, 255, 255, 0.15);
+            color: #ffffff;
+        }
+
+        ul.sidebar li a span.icon {
+            width: 28px;
+            height: 28px;
+            display: inline-flex;
+            justify-content: center;
+            align-items: center;
+            background: rgba(255, 255, 255, 0.18);
+            border-radius: 8px;
+            font-size: 14px;
+        }
+        .main-wrapper {
+            padding: 36px 30px;
+        }
+        .card {
+        max-width: 760px;
+        margin: 40px auto;
+        background: rgba(255, 255, 255, 0.95);
+        padding: 28px 32px;
+        border-radius: 24px;
+        box-shadow: 0 10px 24px rgba(0, 0, 0, 0.18);
+        color: #100939;
+        text-align: left;
+        }
+        .card h1,
+        .card h3 {
+            margin: 0 0 16px;
+            text-align: center;
+        }
+
+        .card ol {
+            margin: 0;
+            padding-left: 1.5rem;
+        }
+
+        .card li {
+            margin: 0.65rem 0;
+            line-height: 1.6;
+        }
+
+        .card ol ol {
+            padding-left: 1.25rem;
+            margin-top: 0.35rem;
+        }
+    </style>
+</head>
+<body>
+    <ul class="sidebar">
+        <li><h2>Menu</h2></li>
+        <li><a class="active" href="dashboard.html">Dashboard</a></li>
+        <li><a href="notebooks.html">Virtual notebooks</a></li>
+        <li><a href="tasks.html">Tasks</a></li>
+        <li><a href="profile.html">Profile</a></li>
+    </ul>
+    <div class="card" style="background-color: white; margin: auto; color: #100939; box-shadow: 0px 6px 8px 0px #494848; text-align: center;">
+        <h1>Information and Communications Technology</h1>
+        <h3>The Curriculum</h3>
+        <ol type="I">
+            <li>thing
+                <ol type="i">
+                    <li>item 1</li>
+                    <li>item 2</li>
+                    <li>item 3</li>
+                </ol>
+            </li>
+            <li>thing 2
+                <ol type="i">
+                    <li>item 1</li>
+                </ol>
+            </li>
+        </ol>
+    </div>
+</body>
+</html>
