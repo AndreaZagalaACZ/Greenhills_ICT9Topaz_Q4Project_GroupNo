@@ -10,9 +10,9 @@ function loginAuthentication() {
     for (let i = 0; i < 1; i++) {
     loginAttempts++;
 
-    if (username === 'ilovepink123' && password === '514986878970') {
+    if (username === 'DonQuiLC' && password === 'HeroMili') {
       window.alert('Welcome back!');
-      window.location.href = 'dashboard.html';
+      window.location.replace('dashboard.html');
       return;
     }
 
@@ -27,5 +27,5 @@ function loginAuthentication() {
    if (loginAttempts >= maxAttempts) {
     alert('You have used all 3 tries. Refresh the page to try again.');
     return;
-   }
+    }
 }
