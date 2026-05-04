@@ -12,6 +12,7 @@
             background-position: center;
             background-repeat: no-repeat;
             font-family: Noto Sans, sans-serif;
+            margin-left: 180px;
         }
         div {
             text-align: center; 
@@ -22,36 +23,119 @@
             border-radius: 5px; 
             text-align: center;
         }
+        ul.sidebar {
+        list-style: none;
+        margin: 0;
+        padding: 24px 0;
+        width: 180px;
+        background: linear-gradient(180deg, #a119bf 0%, #7a0d9a 100%);
+        position: fixed;
+        top: 0;
+        left: 0;
+        height: 100%;
+        overflow: auto;
+        box-shadow: 4px 0 18px rgba(0, 0, 0, 0.25);
+        }
+
+        ul.sidebar h2 {
+            color: #fff;
+            font-size: 16px;
+            margin: 0 0 18px;
+            padding: 0 20px;
+            text-transform: uppercase;
+            letter-spacing: 0.08em;
+        }
+
+        ul.sidebar li {
+            margin: 0;
+        }
+
+        ul.sidebar li a {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            color: #f7edf7;
+            padding: 14px 20px;
+            text-decoration: none;
+            border-radius: 12px;
+            transition: background 0.25s ease, color 0.25s ease;
+        }
+
+        ul.sidebar li a.active,
+        ul.sidebar li a:hover {
+            background: rgba(255, 255, 255, 0.15);
+            color: #ffffff;
+        }
+
+        ul.sidebar li a span.icon {
+            width: 28px;
+            height: 28px;
+            display: inline-flex;
+            justify-content: center;
+            align-items: center;
+            background: rgba(255, 255, 255, 0.18);
+            border-radius: 8px;
+            font-size: 14px;
+        }
+        .main-wrapper {
+            padding: 36px 30px;
+            display: flex;
+            gap: 24px;
+            justify-content: center;
+            align-items: flex-start;
+            flex-wrap: wrap;
+            margin-top: 24px;
+            
+        }
+        .main-wrapper > div {
+            background-color: white;
+            color: #100939;
+            padding: 20px;
+            border-radius: 50px;
+            box-shadow: 0px 6px 8px rgba(73, 72, 72, 0.35);
+        }
+        .profile-card {
+            flex: 1 1 320px;
+            max-width: 420px;
+        }
     </style>
 </head>
 <body>
+    <ul class="sidebar">
+        <li><h2>Menu</h2></li>
+        <li><a class="active" href="dashboard.html">Dashboard</a></li>
+        <li><a href="notebooks.html">Virtual notebooks</a></li>
+        <li><a href="tasks.html">Tasks</a></li>
+        <li><a href="profile.html">Profile</a></li>
+    </ul>
     <div class="main-wrapper">
-        <div style="text-align: center; background-image: linear-gradient(45deg, rgba(230, 154, 207, 1) 0%, rgba(190, 140, 240, 1) 100%); padding: 20px; border-radius: 50px; max-width: 300px;">
+        <div class ="profile-card" style="text-align: center; background-color: white; color: #100939; padding: 20px; border-radius: 50px; max-width: 300px;">
             <img id="preview" src="png.png" alt="Profile preview">
             <form>
-                <br><input id="fileInput" type="file" accept="image/*"style="width:100%; background-color: rgb(208, 46, 237); color:white; padding:10px; border:none; border-radius:5px;">
+                <br><input id="fileInput" type="file" accept="image/*"style="width:100%; background-color: rgb(170, 56, 215); color:white; padding:10px; border:none; border-radius:5px;">
             </form>
         </div>
-        <br><div style="text-align: left; background-color: white; padding: 20px; border-radius: 50px; max-width: 400px; color: #100939; box-shadow: 0px 6px 8px 0px #494848;">
+        <br><div class="profile-card" style="text-align: left; background-color: white; padding: 20px; border-radius: 50px; max-width: 400px; color: #100939; box-shadow: 0px 6px 8px 0px #494848;">
             <h1><b>Student Information</b></h1>
-            <p style="color: rgb(255,255,255);">Personal Information of the given Student. Please contact an administrator via regristration office for any changes.</p>
+            <p>Personal Information of the given Student. Please contact an administrator via regristration office for any changes.</p>
             <p>Username:</p>
-            <p><!--Username--></p>
+            <p>DonQuiLC</p>
             <p>Password:</p>
-            <p><!--Password--></p>
+            <p>HeroMili</p>
             <p>Student ID:</p>
-            <p><!--Student ID--></p>
+            <p>087868970</p>
             <p>Grade and Section:</p> 
-            <p><!--Grade and Section--></p>
+            <p>Grade 9 - Diamond</p>
             <p>Contact Number:</p>
-            <p><!--Contact Number--></p>
+            <p>063933550336279</p>
             <p>Email Address</p>
-            <p><!--Email Address--></p>
+            <p>milisancho@gmail.com</p>
             <form style="text-align:center;">
-                <br><button type="submit" style="background-color: rgb(208, 46, 237); color: rgb(0, 0, 0); padding: 10px 80px; border: none; border-radius: 5px; text-align: center;" style="color: white; text-decoration: none;">Change Password</a></button>
-            </form> <!-- add like add a password window.alert() thing i thing u have it in ur notes thingys but idk the login part vro-->
+                <br><button id="changePasswordBtn" type="button" onclick="changePassword()" style="background-color: rgb(170, 56, 215); color: white; padding: 10px 80px; border: none; border-radius: 5px; text-align: center;">Change Password</button>
+            </form>
         </div>
     </div><br>
+    <script src="proj5.js"></script>
     <script>
         const fileInput = document.getElementById('fileInput');
         const previewImg = document.getElementById('preview');
