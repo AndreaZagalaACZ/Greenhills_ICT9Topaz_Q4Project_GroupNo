@@ -4,8 +4,6 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
     <title>Q4 Project</title>
 </head>
     <style>
@@ -77,18 +75,19 @@
         h5 {
             text-align: center;
         }
-        .box {
-            float: left;
-            width: 33.33%;
-            padding: 50px;
-            border-radius: 15px;
-            border: 5px solid rgb(130, 138, 125);
-        }
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 20px;
+            margin: 30px 0;
+            }
 
-        .clearfix::after {
-            content: "";
-            clear: both;
-            display: table;
+        .box {
+            padding: 20px;
+            border-radius: 14px;
+            color: #fff;
+            min-height: 140px;
+            box-sizing: border-box;
         }
 </style>
 </head>
@@ -101,39 +100,72 @@
         <li><a href="profile.html">Profile</a></li>
         <li><a href="index.html">Logout</a></li>
     </ul>
-    <h1>Notebooks</h1>
-    <p>Select a subject below</p>
-    <div class="clearfix">
-  <div class="box" style="background-color:#df4242">
-    <h1>English</h1>
-    <h4>9-Topaz 2025-2026</h4>
-    <h6>MA. CARIZZA ALFARO</h6>
-  </div>
-  <div class="box" style="background-color:#9a24d4">
-    <h1>ICT</h1>
-    <h4>9-Topaz 2025-2026</h4>
-    <h6>JOSUA RONNEL ORTIZ</h6>
-  </div>
-  <div class="box" style="background-color:#4083e2">
-    <h1>Values Education</h1>
-    <h4>9-Topaz 2025-2026</h4>
-    <h6>MA. NEENA LIBRAMONTE</h6>
+    <div class="main-wrapper">
+        <h1>Notebooks</h1>
+        <p>Select a subject below</p>
+        <div class="grid">
+            <div class="box" style="background-color: white; color: #100939; box-shadow: 0px 6px 8px 0px #494848;">
+            <h1>English</h1>
+            <h4>9-Topaz 2025-2026</h4>
+            <h6>MA. CARIZZA ALFARO</h6>
+            </div>
+            <div class="box" style="background-color: white; color: #100939; box-shadow: 0px 6px 8px 0px #494848;">
+                <h1>ICT</h1>
+                <h4>9-Topaz 2025-2026</h4>
+                <h6>JOSUA RONNEL ORTIZ</h6>
+            </div>
+            <div class="box" style="background-color: white; color: #100939; box-shadow: 0px 6px 8px 0px #494848;">
+                <h1>Values Education</h1>
+                <h4>9-Topaz 2025-2026</h4>
+                <h6>MA. NEENA LIBRAMONTE</h6>
+            </div>
+            <div class="box" style="background-color: white; color: #100939; box-shadow: 0px 6px 8px 0px #494848;">
+                <h1>Math</h1>
+                <h4>9-Topaz 2025-2026</h4>
+                <h6>ARJEAN BANTING</h6>
+            </div>
+            <div class="box" style="background-color: white; color: #100939; box-shadow: 0px 6px 8px 0px #494848;">
+                <h1>Science</h1>
+                <h4>9-Topaz 2025-2026</h4>
+                <h6>CHARLES MICHAEL CASTAÑO</h6>
+            </div>
+            <div class="box" style="background-color: white; color: #100939; box-shadow: 0px 6px 8px 0px #494848;">
+                <h1>Social Studies</h1>
+                <h4>9-Topaz 2025-2026</h4>
+                <h6>AKIHIRO MARUTANI</h6>
+            </div>
+            <div class="box" style="background-color: white; color: #100939; box-shadow: 0px 6px 8px 0px #494848;">
+                <h1>TLE</h1>
+                <h4>9-Topaz 2025-2026</h4>
+                <h6>NANCY MILANTE</h6>
+            </div>
+            <div class="box" style="background-color: white; color: #100939; box-shadow: 0px 6px 8px 0px #494848;">
+                <h1>PEH</h1>
+                <h4>9-Topaz 2025-2026</h4>
+                <h6>MARK VINCENT GERVACIO</h6>
+            </div>
+            <div class="box" style="background-color: white; color: #100939; box-shadow: 0px 6px 8px 0px #494848;">
+                <h1>Music and Arts</h1>
+                <h4>9-Topaz 2025-2026</h4>
+                <h6>RALPH JOSEPH DE GUZMAN</h6>
+            </div>
+            <div class="box" style="background-color: white; color: #100939; box-shadow: 0px 6px 8px 0px #494848;">
+                <h1>Law</h1>
+                <h4>9-Topaz 2025-2026</h4>
+                <h6>JEANNE PAULINE DE LA PEÑA</h6>
+            </div>
+            <div class="box" style="background-color: white; color: #100939; box-shadow: 0px 6px 8px 0px #494848;">
+                <h1>Filipino</h1>
+                <h4>9-Topaz 2025-2026</h4>
+                <h6>KARYLLE OVAL</h6>
+            </div>
+            <div class="box" style="background-color: white; color: #100939; box-shadow: 0px 6px 8px 0px #494848;">
+                <h1>Homeroom</h1>
+                <h4>9-Topaz 2025-2026</h4>
+                <h6>CHARLES MICHAEL CASTAÑO</h6>
+            </div>
+        </div>
     </div>
-  <div class="box" style="background-color:#2d18b5">
-    <h1>Math</h1>
-    <h4>9-Topaz 2025-2026</h4>
-    <h6>ARJEAN BANTING</h6>
-  </div>
-  <div class="box" style="background-color:#21ad28">
-    <h1>Science</h1>
-    <h4>9-Topaz 2025-2026</h4>
-    <h6>CHARLES MICHAEL CASTAÑO</h6>
-  </div>
-  <div class="box" style="background-color:#b28630">
-    <h1>Social Studies</h1>
-    <h4>9-Topaz 2025-2026</h4>
-    <h6>AKIHIRO MARUTANI</h6>
-  </div>
   <footer>
         <h5 style="background-color:rgb(161, 172, 173);">Andrea Zagala & Liam Tiong | OBMC 9-Topaz 2025-2026</h5>
     </footer>
