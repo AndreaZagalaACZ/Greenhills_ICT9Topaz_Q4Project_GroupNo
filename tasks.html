@@ -3,20 +3,12 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Q4 Project</title>
+    <link rel="stylesheet" href="style.css">
     <style>
         body {
             margin: 0;
             background: url(https://t3.ftcdn.net/jpg/03/55/60/70/360_F_355607062_zYMS8jaz4SfoykpWz5oViRVKL32IabTP.jpg) center center/cover no-repeat fixed;
             font-family: Noto Sans, sans-serif;
-        }
-        
-        .footer {
-        position: fixed;
-        left: 0;
-        bottom: 0;
-        width: 100%;
-        color: white;
-        text-align: center;
         }
         
         ul.sidebar {
@@ -75,6 +67,7 @@
         }
         .main-wrapper {
             padding: 36px 30px;
+            margin-left: 180px;
         }
         h5 {
         text-align: center;
@@ -84,13 +77,18 @@
         width: 33.33%;
         padding: 50px;
         border-radius: 15px;
-        border: 5px solid rgb(130, 138, 125);
+        box-sizing: border-box;
         }
 
         .clearfix::after {
         content: "";
         clear: both;
         display: table;
+        }
+        
+        .clearfix {
+        display: flex;
+        gap: 20px;
         }
     </style>
 </head>
@@ -107,9 +105,9 @@
     <h1>Task</h1>
     <header>
         Choose a task below
-    </header>
+    </header><br>
     <div class="clearfix">
-        <div class="box" style="background-color:#fffbfb">
+        <div class="box" style="background-color: white; color: #100939; box-shadow: 0px 6px 8px 0px #494848;">
             <h1>English</h1>
             <h4>Q4 PROJECT: RESEARCH PROPOSAL (VIDEO PRESENTATION)</h4>
             <h6>Please submit your final paper here. Everyone in the group should submit the output.</h6>
@@ -118,7 +116,7 @@
                 </form><br>
             <p>Deadline of submission:</p><p style="color:red;">May 8, 2026 5:00 PM</p>
     </div>
-    <div class="box" style="background-color:#ffffff">
+    <div class="box" style="background-color: white; color: #100939; box-shadow: 0px 6px 8px 0px #494848;">
         <h1>ICT</h1>
         <h4>PROJECT</h4>
         <h6>1. Download the guidelines for the Project from our Class Files.</h6>
@@ -128,28 +126,15 @@
         </form><br>
     <p>Deadline of submission:</p><p style="color:red;">May 5, 2026 7:00 PM</p>
     </div>
-    <div class="box" style="background-color:#ffffff">
+    <div class="box" style="background-color: white; color: #100939; box-shadow: 0px 6px 8px 0px #494848;">
         <h1>VE</h1>
         <h4>Video Output</h4>
         <h6>Good morning, class. This is where you will submit your VIDEO OUTPUT for your Group Final Project. The video's length should not be more than 15 minutes (no minimum length). This should include a PPT with a voiceover and a thumbnail of the speaker in the lower right area of the video.</h6>
         <h6>Follow this file name format: 9T_Group1_VE9_Final Project</h6>
         <form action="upload.php" method="post" enctype="multipart/form-data">
-            <input type="file" name="fileToUpload" id="fileToUpload"><br>
-        </form><br>
+                <input type="file" name="fileToUpload" id="fileToUpload"><br>
+            </form><br>
     <p>Deadline of submission:</p><p style="color:red;">May 5, 2026 7:00 PM</p>
-    </div>
-    <div class="box" style="background-color:#ffffff">
-        <h1>Music</h1>
-        <h4>Script sheet</h4>
-        <h6>Good day, for your activity today: kindly read the instructions in the attached file</h6>
-        <h6>Everyone should submit to ensure full cooperation.</h6>
-        <form action="upload.php" method="post" enctype="multipart/form-data">
-            <input type="file" name="fileToUpload" id="fileToUpload"><br>
-        </form><br>
-    <p>Deadline of submission:</p><p style="color:red;">May 5, 2026 7:00 PM</p>
-    </div>
-    <div class="footer">
-        <footer><h5 style="background-color:rgb(161, 172, 173);">Andrea Zagala & Liam Tiong  OBMC 9-Topaz 2025-2026</h5></footer>
     </div>
 </body>
 </html>
