@@ -76,13 +76,18 @@
         width: 33.33%;
         padding: 50px;
         border-radius: 15px;
-        border: 5px solid rgb(130, 138, 125);
+        box-sizing: border-box;
         }
 
         .clearfix::after {
         content: "";
         clear: both;
         display: table;
+        }
+        
+        .clearfix {
+        display: flex;
+        gap: 20px;
         }
     </style>
 </head>
@@ -101,7 +106,7 @@
         Choose a task below
     </header>
     <div class="clearfix">
-        <div class="box" style="background-color:#fffbfb">
+        <div class="box" style="background-color: white; color: #100939; box-shadow: 0px 6px 8px 0px #494848;">
             <h1>English</h1>
             <h4>Q4 PROJECT: RESEARCH PROPOSAL (VIDEO PRESENTATION)</h4>
             <h6>Please submit your final paper here. Everyone in the group should submit the output.</h6>
@@ -110,7 +115,7 @@
                 </form><br>
             <p>Deadline of submission:</p><p style="color:red;">May 8, 2026 5:00 PM</p>
     </div>
-    <div class="box" style="background-color:#ffffff">
+    <div class="box" style="background-color: white; color: #100939; box-shadow: 0px 6px 8px 0px #494848;">
         <h1>ICT</h1>
         <h4>PROJECT</h4>
         <h6>1. Download the guidelines for the Project from our Class Files.</h6>
@@ -120,7 +125,7 @@
         </form><br>
     <p>Deadline of submission:</p><p style="color:red;">May 5, 2026 7:00 PM</p>
     </div>
-    <div class="box" style="background-color:#ffffff">
+    <div class="box" style="background-color: white; color: #100939; box-shadow: 0px 6px 8px 0px #494848;">
         <h1>VE</h1>
         <h4>Video Output</h4>
         <h6>Good morning, class. This is where you will submit your VIDEO OUTPUT for your Group Final Project. The video's length should not be more than 15 minutes (no minimum length). This should include a PPT with a voiceover and a thumbnail of the speaker in the lower right area of the video.</h6>
